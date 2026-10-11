@@ -1,0 +1,23 @@
+[project]
+name = "hands-on-session-laser-stabilization"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "August Gude", email = "augustgude@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "lpsd>=0.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+hands-on-session-laser-stabilization = "hands_on_session_laser_stabilization:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
